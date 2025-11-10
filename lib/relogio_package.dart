@@ -3,12 +3,27 @@ library relogio_package;
 import 'package:flutter/widgets.dart';
 import 'dart:async';
 
-/// Um widget que mostra um relógio digital ao vivo, atualizando a cada segundo.
+/// Um widget Flutter que exibe um relógio digital ao vivo, atualizando a cada segundo.
+///
+/// O [ClockWidget] pode ser exibido em formato 24h ou 12h (AM/PM) e permite
+/// personalização do estilo do texto.
+///
+/// Exemplo de uso:
+/// ```dart
+/// ClockWidget(
+///   use24HourFormat: false,
+///   style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
+/// )
+/// ```
+///
+/// Consulte o README do pacote para mais detalhes e exemplos.
 class ClockWidget extends StatefulWidget {
   /// Estilo opcional de texto para o relógio.
   final TextStyle? style;
 
-  /// Formato opcional: se true, 24h; se false, 12h com AM/PM.
+  /// Se `true`, exibe o relógio em formato 24h.
+  /// Se `false`, exibe em formato 12h com AM/PM.
+  /// Padrão: `true`.
   final bool use24HourFormat;
 
   const ClockWidget({super.key, this.style, this.use24HourFormat = true});

@@ -1,7 +1,10 @@
 name: relogio_package
 description: A Flutter widget package that displays a live clock
 version: 0.0.1
-homepage: https://github.com/rafaelmamorim/IFSUL-Mobile2-Flutter-relogio_widget
+homepage: https://www.rafaelamorim.com.br
+repository: https://github.com/rafaelmamorim/IFSUL-Mobile2-Flutter-relogio_widget
+issues: https://github.com/rafaelmamorim/IFSUL-Mobile2-Flutter-relogio_widget/issues
+documentation: https://github.com/rafaelmamorim/IFSUL-Mobile2-Flutter-relogio_widget/wiki
 
 environment:
   sdk: ^3.9.2
